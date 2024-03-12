@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Musical App</title>
+<style>
+    body{
+  background-image: url("https://img.freepik.com/premium-photo/girl-listens-music-with-headphones_917664-17083.jpg");
+   background-repeat: no-repeat;
+    background-position: middle;
+	 background-size: cover;
+	 background-attachment:fixed ;
+}
+#card-container {
+        display: flex; 
+        justify-content:space-around; 
+    }
+h2{
+color:white;
+font-family:Aptos Display;
+ font-size:30px; 
+}
+#home1,
+    #kuthu1,
+    #romantic1,
+    #melody1 
+{
+color:white;
+font-family:Aptos Display;
+ font-size:30px; 
+}
+#siva,#dada,#padi,#yaradi,#Iravu,#something,#yeppadi{
+  top:50%;
+ font-size:16px; 
+ font-family:Lucida Fax;
+ text-align: center;
+ color:black;
+ }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+   left: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background-color:#ff8c66;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-around;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #cceeff;
+}
+
+.active {
+  background-color: #b32d00;
+}
+	.content{
+ width:100%;
+ position:absolute;
+ top:50%;
+ transform:translateY(50%);
+ text-align:center;
+ color:#fff;
+}
+.content p{
+  font-size:80px;
+  font-family:Vladimir Script;
+  margin-top:60px;
+  
+}
+    #home,
+    #kuthu,
+    #romantic,
+    #melody {
+	
+        padding: 20px;
+        height: 1000px; /* Just for demonstration */
+    }
+	 .card {
+	     margin-right: 10px;
+	    background-color:#F0FFFF;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+ 
+</style>
+</head>
+<body>
+<nav class="taskbar">
+   <ul>
+   <li><a href="#home">Home</a></li>
+   <li><a href="#kuthu">Kuthu</a></li>
+   <li> <a href="#romantic">Romantic</a></li>
+   <li> <a href="#melody">Melody</a></li>
+   </ul>
+</nav>
+
+<div id="home">
+    <!-- Home content -->
+	<div class="content"> 
+ <p>Where words fail, Music speaks</p>
+</div>
+    <h2>Home</h2>
+    <p><div id="home1">Welcome to our musical app! Explore different genres...</div></p>
+</div>
+<div id="kuthu">
+    <!-- Kuthu content -->
+	
+    <h2>Kuthu</h2>
+    <p><div id="kuthu1">Get ready to dance with our energetic Kuthu music collection!<div></p>
+	<div id="card-container">
+	<div class="card">
+    <img src="https://e1.pxfuel.com/desktop-wallpaper/379/874/desktop-wallpaper-sivakumarin-sabadham-thumbnail.jpg" alt="sivakumar song Image">
+	<p >
+	<div id="siva">Sivakumar Pondati (From Sivakumarin Sabadham)<br></div>
+	<audio controls>
+    <source src="C:\Users\rsrid\Desktop\Sivakumar Pondati.mp3" type="audio/mp3">
+	</audio>
+	</p>
+    </div>
+	<div class="card">
+    <img src="C:\Users\rsrid\Desktop\Dada15.gif" alt="dada song Image">
+	<p >
+	<div id="dada">Namma Thamizh Folku (From Dada)<br></div>
+	<audio controls>
+    <source src="C:\Users\rsrid\Desktop\Namma Thamizh Folku.mp3" type="audio/mp3">
+	</audio>
+	</p>
+    </div>
+	<div class="card">
+    <img src="https://c.saavncdn.com/617/Padichi-Parthen-From-Polladhavan-Tamil-2021-20230321193506-500x500.jpg" alt="polladhavan song Image">
+	<p >
+	<div id="padi">Padichi Parthen (From Polladhavan)<br></div>
+	<audio controls>
+    <source src="C:\Users\rsrid\Desktop\Padichu Pathen.mp3" type="audio/mp3">
+	</audio>
+	</p>
+    </div>
+	</div>
+</div>
+<div id="romantic">
+    <!-- Romantic content -->
+    <h2>Romantic</h2>
+    <p><div id="romantic1">Feel the love in the air with our romantic melodies...</div></p>
+		<div id="card-container">
+	<div class="card">
+    <img src="https://1601606126.rsc.cdn77.org/raagaimg/r_img/250/t/t0001302-1.jpg" alt="Santhosh Subramaniyam song Image">
+	<p >
+	<div id="yeppadi"> Yeppadi Iruntha En Manasu(From Santhosh Subramaniyam)<br></div>
+	<audio controls>
+    <source src="C:\Users\rsrid\Desktop\Yeppadi Iruntha En Manasu.mp3" type="audio/mp3">
+	</audio>
+	</p>
+    </div>
+	<div class="card">
+    <img src="https://i.scdn.co/image/ab67616d0000b273ea673dca23e60cfe27f7b888" alt="something song Image">
+	<p >
+	<div id="something">Un Paarvayil(From Something Something Unakkum Enakkum)<br></div>
+	<audio controls>
+    <source src="C:\Users\rsrid\Desktop\Un Paarvayil.mp3" type="audio/mp3">
+	</audio>
+	</p>
+    </div>
+	</div>
+</div>
+<div id="melody">
+    <!-- Melody content -->
+    <h2>Melody</h2>
+    <p><div id="melody1">Relax and unwind with our soothing melody tracks...</div></p>
+		<div id="card-container">
+	<div class="card">
+    <img src="C:\Users\rsrid\Desktop\8e78b630-9cb5-4f97-a6ef-a30f195f760d.jpg" alt="sivakumar song Image">
+	<p >
+	<div id="Iravu"> Iravaaga Nee(From Idhu Enna Maayam)<br></div>
+	<audio controls>
+    <source src="C:\Users\rsrid\Desktop\Idu Enna Maayam.mp3" type="audio/mp3">
+	</audio>
+	</p>
+    </div>
+	<div class="card">
+    <img src="C:\Users\rsrid\Desktop\Yaaradi-Nee-Mohini-Tamil-2008-20200620135829-500x500.jpg" alt="yaradi nee mohini song Image">
+	<p >
+	<div id="yaradi">Engeyo Partha mayakkam(From Yaaradi Nee Mohini)<br></div>
+	<audio controls>
+    <source src="C:\Users\rsrid\Desktop\Yaaradi Nee Mohini.mp3" type="audio/mp3">
+	</audio>
+	</p>
+    </div>
+	</div>
+</div>
+</body>
+</html>
+
